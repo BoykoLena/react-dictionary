@@ -20,10 +20,11 @@
   border: none;
   border-bottom: 2px solid white;
   margin-right: 40px;
-  color: white;
+  color: darkorange;
   font-weight: 200;
   font-size: 38px;
   outline: none;
+  text-align: center;
 }
 
 .App .itd-button {
