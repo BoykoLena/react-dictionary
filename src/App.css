@@ -1,1 +1,10 @@
-
+.App {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 30px;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
