@@ -1,3 +1,5 @@
 body {
   background-image: url("../public/bg-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

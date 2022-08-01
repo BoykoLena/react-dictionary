@@ -1,10 +1,44 @@
 .App {
-  width: 800px;
-  margin: 100px auto;
+  max-width: 800px;
+  margin: 200px auto;
   background-color: #141414;
   color: #ffffff;
   padding: 30px;
   border: 10px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+.App h1 {
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+
+.App input {
+  width: 50%;
+  background: inherit;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-right: 40px;
+  color: white;
+  font-weight: 200;
+  font-size: 38px;
+  outline: none;
+}
+
+.App button {
+  background: inherit;
+  border: none;
+  transition: all 200ms ease-in-out;
+  padding: 5px 10px;
+}
+
+.App button:hover {
+  border: 0.5px solid white;
+  border-radius: 10px;
+}
+
+.App i {
+  color: white;
+  font-size: 38px;
 }
