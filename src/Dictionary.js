@@ -1,13 +1,18 @@
 import "./Dictionary.css";
 
-function Dictionary() {
+function Dictionary(props) {
+  console.log(props);
   return (
     <div className="Dictionary">
       <header className="mb-5">
-        <form className="d-flex align-items-end">
-          <input type="text" placeholder="search word..."></input>
+        <form className="d-flex align-items-end" onSubmit={props.search}>
+          <input
+            type="text"
+            placeholder="search word..."
+            onChange={props.handleKeyChange}
+          ></input>
           <button>
-            <i class="fa-solid fa-arrow-right-long"></i>
+            <i className="fa-solid fa-arrow-right-long"></i>
           </button>
         </form>
       </header>
@@ -15,12 +20,13 @@ function Dictionary() {
         <div className=" d-flex justify-content-between align-items-center">
           <h2>sunset</h2>
           <button>
-            <i class="fa-solid fa-volume-high"></i>
+            <i className="fa-solid fa-volume-high"></i>
             <span className="ms-2">/sʌnsɛt/</span>
           </button>
         </div>
+        <div>noun</div>
         <section>
-          <h5>noun</h5>
+          <h5>definition</h5>
           <p>
             the time in the evening when the sun disappears or daylight fades.
           </p>
