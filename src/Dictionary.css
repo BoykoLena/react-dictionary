@@ -1,0 +1,65 @@
+.Dictionary header input {
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-right: 5px;
+  font-size: 18px;
+  background: inherit;
+  color: white;
+  font-weight: 100;
+  outline: none;
+}
+
+.Dictionary header button {
+  border: none;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 2px 7px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+.Dictionary header button:hover {
+  border: 0.5px solid white;
+}
+
+.Dictionary-result button {
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: inherit;
+  padding: 5px 10px;
+  color: white;
+  transition: all 200ms ease-in-out;
+  font-weight: 100;
+}
+
+.Dictionary-result button:hover {
+  border-color: gray;
+  color: darkorange;
+}
+
+.Dictionary-result section {
+  margin-top: 30px;
+}
+
+.Dictionary-result h5 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.Dictionary-result p {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.Dictionary-result section button {
+  margin-top: 10px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.Dictionary-image img {
+  margin: 10px auto;
+}

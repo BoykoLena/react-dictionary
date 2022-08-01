@@ -9,12 +9,12 @@
   border-radius: 20px;
 }
 
-.App h1 {
+.App .itd-header {
   font-weight: 200;
   margin-bottom: 60px;
 }
 
-.App input {
+.App .itd-input {
   width: 50%;
   background: inherit;
   border: none;
@@ -26,19 +26,19 @@
   outline: none;
 }
 
-.App button {
+.App .itd-button {
   background: inherit;
   border: none;
   transition: all 200ms ease-in-out;
   padding: 5px 10px;
 }
 
-.App button:hover {
+.App .itd-button:hover {
   border: 0.5px solid white;
   border-radius: 10px;
 }
 
-.App i {
+.App .itd-button i {
   color: white;
   font-size: 38px;
 }
