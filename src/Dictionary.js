@@ -1,7 +1,8 @@
 import "./Dictionary.css";
+import Meaning from "./Meaning";
 
 function Dictionary(props) {
-  console.log(props);
+  console.log(props.response);
   return (
     <div className="Dictionary">
       <header className="mb-5">
@@ -17,32 +18,18 @@ function Dictionary(props) {
         </form>
       </header>
       <div className="Dictionary-result">
-        <div className=" d-flex justify-content-between align-items-center">
-          <h2>sunset</h2>
+        <div className=" d-flex justify-content-between align-items-center mb-4">
+          <h2>{props.response.word}</h2>
           <button>
             <i className="fa-solid fa-volume-high"></i>
-            <span className="ms-2">/sʌnsɛt/</span>
+            <span className="ms-2">{props.response.phonetic}</span>
           </button>
         </div>
-        <div>noun</div>
+
+        <Meaning response={props.response.meanings} />
+
         <section>
-          <h5>definition</h5>
-          <p>
-            the time in the evening when the sun disappears or daylight fades.
-          </p>
-        </section>
-        <section>
-          <h5>synonyms</h5>
-          <button>twilight</button>
-          <button>twilight</button>
-          <button>twilight</button>
-        </section>
-        <section>
-          <h5>phrases</h5>
-          <p>sunset was still a couple of hours away</p>
-        </section>
-        <section>
-          <h5>image</h5>
+          <div className="mb-2">image</div>
           <div className="Dictionary-image d-flex flex-wrap">
             <img
               width={200}

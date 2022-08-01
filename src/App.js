@@ -24,14 +24,12 @@ function App() {
 
   if (response != null) {
     return (
-      <div>
-        <div className="App mt-5">
-          <Dictionary
-            response={response}
-            handleKeyChange={(event) => handleKeyChange(event)}
-            search={(event) => search(event)}
-          />
-        </div>
+      <div className="App mt-5">
+        <Dictionary
+          response={response}
+          handleKeyChange={(event) => handleKeyChange(event)}
+          search={(event) => search(event)}
+        />
       </div>
     );
   } else {
