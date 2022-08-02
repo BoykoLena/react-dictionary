@@ -2,7 +2,7 @@ function Pronounce(props) {
   //   console.log(props.audio);
   if (props.audio !== "") {
     return (
-      <a href={props.audio} target="_blank">
+      <a href={props.audio} target="_blank" rel="noreferrer">
         <i className="fa-solid fa-volume-high"></i>
       </a>
     );
