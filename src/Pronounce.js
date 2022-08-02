@@ -1,10 +1,10 @@
 function Pronounce(props) {
-  console.log(props.audio);
+  //   console.log(props.audio);
   if (props.audio !== "") {
     return (
-      <button>
+      <a href={props.audio} target="_blank">
         <i className="fa-solid fa-volume-high"></i>
-      </button>
+      </a>
     );
   } else {
     return null;

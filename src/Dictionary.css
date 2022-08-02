@@ -23,17 +23,16 @@
   border: 0.5px solid white;
 }
 
-.Dictionary-result button {
+.Dictionary-result a {
   border: 1px solid white;
   border-radius: 20px;
   background-color: inherit;
   padding: 5px 10px;
   color: white;
   transition: all 200ms ease-in-out;
-  font-weight: 100;
 }
 
-.Dictionary-result button:hover {
+.Dictionary-result a:hover {
   border-color: gray;
   color: darkorange;
 }
