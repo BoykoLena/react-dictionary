@@ -1,5 +1,7 @@
 import "./Dictionary.css";
 import Meaning from "./Meaning";
+import Phonetic from "./Phonetic";
+import Pronounce from "./Pronounce";
 
 function Dictionary(props) {
   return (
@@ -19,10 +21,10 @@ function Dictionary(props) {
       <div className="Dictionary-result">
         <div className=" d-flex justify-content-between align-items-center mb-4">
           <h2>{props.response.word}</h2>
-          <button>
-            <i className="fa-solid fa-volume-high"></i>
-            <span className="ms-2">{props.response.phonetic}</span>
-          </button>
+          <div>
+            <Pronounce audio={props.response.phonetics[0].audio} />
+            <Phonetic phonetic={props.response.phonetic} />
+          </div>
         </div>
 
         <Meaning response={props.response.meanings} />
