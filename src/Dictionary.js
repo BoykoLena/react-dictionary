@@ -2,7 +2,6 @@ import "./Dictionary.css";
 import Meaning from "./Meaning";
 
 function Dictionary(props) {
-  console.log(props.response);
   return (
     <div className="Dictionary">
       <header className="mb-5">

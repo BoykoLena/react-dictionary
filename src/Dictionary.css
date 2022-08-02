@@ -48,18 +48,8 @@
   font-style: italic;
 }
 
-.Dictionary-result section a {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-  color: white;
+.Dictionary-result .synonyms {
   margin-right: 20px;
-  font-style: italic;
-  transition: all 200ms ease-in-out;
-}
-
-.Dictionary-result section a:hover {
-  color: darkorange;
-  border-bottom: 1px solid grey;
 }
 
 .Dictionary-image img {

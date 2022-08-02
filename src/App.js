@@ -27,8 +27,8 @@ function App() {
       <div className="App mt-5">
         <Dictionary
           response={response}
-          handleKeyChange={(event) => handleKeyChange(event)}
-          search={(event) => search(event)}
+          handleKeyChange={handleKeyChange}
+          search={search}
         />
       </div>
     );

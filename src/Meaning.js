@@ -11,9 +11,9 @@ function Meaning(props) {
             <div className="d-flex flex-wrap">
               {mean.synonyms.map((synonym, index) => {
                 return (
-                  <a key={index} href="/">
+                  <div className="synonyms" key={index}>
                     {synonym}
-                  </a>
+                  </div>
                 );
               })}
             </div>
