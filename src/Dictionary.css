@@ -51,8 +51,10 @@
   margin-right: 20px;
 }
 
-.Dictionary-image img {
-  margin: 10px auto;
+.Dictionary-image a {
+  border: none;
+  padding: 0;
+  margin: 15px 5px;
 }
 
 .itd-color-orange {
