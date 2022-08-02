@@ -1,3 +1,6 @@
+import Phrases from "./Phrases";
+import Synonyms from "./Synonyms";
+
 function Meaning(props) {
   return (
     <section>
@@ -7,18 +10,8 @@ function Meaning(props) {
             <div className="mb-2 itd-color-orange">{mean.partOfSpeech}</div>
             <h5 className="mb-0">definition</h5>
             <p className="mb-2">{mean.definitions[0].definition}</p>
-            <h5 className="mb-0">synonyms</h5>
-            <div className="d-flex flex-wrap">
-              {mean.synonyms.map((synonym, index) => {
-                return (
-                  <div className="synonyms" key={index}>
-                    {synonym}
-                  </div>
-                );
-              })}
-            </div>
-            <h5 className="mb-0 mt-2">phrases</h5>
-            <p>{mean.definitions[0].example}</p>
+            <Synonyms synonyms={mean.synonyms} />
+            <Phrases example={mean.definitions[0].example} />
           </div>
         );
       })}
