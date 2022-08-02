@@ -2,7 +2,7 @@ function Photos(props) {
   if (props.photos) {
     return (
       <section>
-        <div className="mb-2">image</div>
+        <div className="mb-2 itd-color-orange">image</div>
         <div className="Dictionary-image d-flex flex-wrap justify-content-around">
           {props.photos.map((photo, index) => {
             console.log(photo);
