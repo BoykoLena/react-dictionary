@@ -6,7 +6,7 @@ import axios from "axios";
 function App() {
   const [keyWord, setKeyWord] = useState("");
   const [response, setResponse] = useState(null);
-  const [photos, setPhotos] = useState(null);
+  const [photos, setPhotos] = useState([]);
 
   const showResponse = (response) => {
     setResponse(response.data[0]);
@@ -32,8 +32,7 @@ function App() {
         }
       });
 
-    setPhotos(null);
-
+    setPhotos([]);
     const apiKey = "563492ad6f917000010000011e60210cfb6a4e74a914717ee77b28f9";
     let pexelUrl = `https://api.pexels.com/v1/search?query=${keyWord}&per_page=15`;
     let headers = { Authorization: `${apiKey}` };

@@ -1,5 +1,5 @@
 function Photos(props) {
-  if (props.photos) {
+  if (props.photos.length > 0) {
     return (
       <section>
         <div className="mb-2 itd-color-orange">image</div>

@@ -23,7 +23,7 @@ function Dictionary(props) {
         <div className=" d-flex justify-content-between align-items-center mb-4">
           <h2>{props.response.word}</h2>
           <div>
-            <Pronounce audio={props.response.phonetics[0].audio} />
+            <Pronounce audio={props.response.phonetics} />
             <Phonetic phonetic={props.response.phonetic} />
           </div>
         </div>
